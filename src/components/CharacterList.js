@@ -25,10 +25,15 @@ export default function CharacterList() {
 
   console.log(characterList);
   return (
-    <section className="character-list">
-      {characterList.map(character=>(
-        <CharacterCard key ={character.id} character={character}/>
-      ))}
-    </section>
+    <div>
+      <SearchForm 
+        setCharacterList={setCharacterList}
+        />
+      <section className="character-list">
+        {characterList.map(character=>(
+          <CharacterCard key ={character.id} character={character}/>
+        ))}
+      </section>
+    </div>
   );
 }
