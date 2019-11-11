@@ -1,5 +1,11 @@
 import React from "react";
 
 export default function CharacterCard() {
-  return <span>todo: character</span>;
-}
+  return (
+    <div>
+    <span>todo: character </span>;
+    <p>testing testing 123</p>
+    </div>
+    
+  )
+};
