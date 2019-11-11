@@ -1,11 +1,22 @@
 import React from "react";
+import styled from 'styled-components';
 
-export default function CharacterCard() {
+const StyledCard = styled.div`
+  background-color: yellow;
+  width: 30%;
+  border: 1px solid black;
+  /* display: flex;
+  flex-direction: row; */
+
+`;
+
+export default function CharacterCard(props) {
   return (
-    <div>
-    <span>todo: character </span>;
-    <p>testing testing 123</p>
-    </div>
+    <StyledCard>
+      <h2>{props.character.name}</h2>
+      <img src={props.character.image}/>
+      <h2>{props.character.species}</h2>
+    </StyledCard>
     
   )
 };
